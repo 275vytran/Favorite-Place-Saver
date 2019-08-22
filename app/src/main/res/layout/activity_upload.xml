@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter location's name"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textColor="#66213E" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="chooseLocation"
+            android:text="CHOOSE LOCATION"
+            android:background="@color/purple"
+            android:textSize="15sp"
+            android:textColor="#66213E" />
+
+
+
+        <EditText
+            android:id="@+id/typeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Add type of location"
+            android:layout_margin="5dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Add comment"
+            android:layout_margin="5dp"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="selectImage"
+            app:srcCompat="@drawable/uploadimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/uploadButton"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="upload"
+                android:background="@drawable/myuploadd"
+                android:textColor="#66213E" />
+
+            <ImageButton
+                android:id="@+id/cancelButton"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:background="@drawable/mycancel"
+                android:textColor="#66213E" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

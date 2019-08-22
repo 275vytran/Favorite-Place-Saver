@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/borderCustom"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/myline" />
+
+        <TextView
+            android:id="@+id/emailCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="User's email"
+            android:textColor="#66213E"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nameCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Location name"
+            android:textAllCaps="true"
+            android:textColor="#66213E"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/typeCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Location type"
+            android:textColor="#76354B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addressCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Location address"
+            android:textColor="#76354B"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/commentCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="User's comment"
+            android:textColor="#76354B"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageCustom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/icon" />
+
+        <Button
+            android:id="@+id/saveCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="SAVE THIS POST TO YOUR LIST"
+            android:background="@color/purple"
+            android:textColor="#66213E" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
